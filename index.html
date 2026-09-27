@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rani Abu Raia · Portfolio</title>
+  <meta name="description" content="Rani Abu Raia — Software Engineer building LLM applications. Projects: Captain Fix, WhatsApp AI Support Bot, Bank Management System.">
+  <meta property="og:title" content="Rani Abu Raia · Portfolio">
+  <meta property="og:description" content="Software Engineer building LLM applications (Gemini, Claude), deployed across cloud platforms.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%236d5efc'/><text x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='white' text-anchor='middle'>RA</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Heebo:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved language/theme before paint to avoid a flash.
+    try {
+      var l = localStorage.getItem('lang'); if (l === 'he') { document.documentElement.lang = 'he'; document.documentElement.dir = 'rtl'; }
+      var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">RA<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#projects"><span lang="en">Projects</span><span lang="he">פרויקטים</span></a>
+        <a href="#about"><span lang="en">About</span><span lang="he">עליי</span></a>
+        <a href="#contact"><span lang="en">Contact</span><span lang="he">צור קשר</span></a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="lang-toggle" aria-label="Switch language">
+          <span lang="en">עב</span><span lang="he">EN</span>
+        </button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow mono"><span class="dot"></span><span lang="en">Open to new opportunities</span><span lang="he">פתוח להזדמנויות חדשות</span></p>
+        <h1>
+          <span lang="en">Hi, I'm Rani Abu Raia.<br><span class="grad">I build AI-powered software</span> that ships.</span>
+          <span lang="he">היי, אני ראני אבו ראיה.<br><span class="grad">אני בונה תוכנה מבוססת AI</span> שעולה לאוויר.</span>
+        </h1>
+        <p class="lead">
+          <span lang="en">Software Engineer building LLM applications with Gemini and Claude, deployed across Cloudflare, Vercel and Render. Background in QA automation at Amdocs, B.Sc. in Mathematics from the Hebrew University.</span>
+          <span lang="he">מהנדס תוכנה שבונה אפליקציות LLM עם Gemini ו-Claude, ומפרסם אותן על Cloudflare, Vercel ו-Render. רקע באוטומציית QA באמדוקס, ותואר ראשון במתמטיקה מהאוניברסיטה העברית.</span>
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects"><span lang="en">See my work</span><span lang="he">לפרויקטים שלי</span> <span class="arrow">→</span></a>
+          <a class="btn" href="assets/Rani_Abu_Raia_CV.docx" download><span lang="en">Download CV</span><span lang="he">הורדת קורות חיים</span></a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="term-bar"><i></i><i></i><i></i><span class="mono">~/rani — zsh</span></div>
+        <pre class="mono" id="term"></pre>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="wrap stats">
+      <div class="stat"><b>3</b><span lang="en">production projects</span><span lang="he">פרויקטים באוויר</span></div>
+      <div class="stat"><b>2</b><span lang="en">LLM providers integrated</span><span lang="he">ספקי LLM משולבים</span></div>
+      <div class="stat"><b>4</b><span lang="en">cloud platforms</span><span lang="he">פלטפורמות ענן</span></div>
+      <div class="stat"><b>3</b><span lang="en">languages spoken</span><span lang="he">שפות מדוברות</span></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <div class="section-head">
+        <p class="eyebrow mono">01 / <span lang="en">projects</span><span lang="he">פרויקטים</span></p>
+        <h2><span lang="en">Selected work</span><span lang="he">עבודות נבחרות</span></h2>
+        <div class="filters" role="tablist">
+          <button class="chip active" data-filter="all"><span lang="en">All</span><span lang="he">הכל</span></button>
+          <button class="chip" data-filter="ai">AI / LLM</button>
+          <button class="chip" data-filter="backend">Backend</button>
+          <button class="chip" data-filter="qa"><span lang="en">QA Automation</span><span lang="he">אוטומציית QA</span></button>
+        </div>
+      </div>
+
+      <!-- WhatsApp -->
+      <article class="project reveal" data-tags="ai backend">
+        <div class="p-meta">
+          <span class="p-num mono">01</span>
+          <span class="p-date mono">Jul 2026</span>
+          <span class="badge live"><span class="dot"></span>Live</span>
+        </div>
+        <div class="p-body">
+          <h3><span lang="en">WhatsApp AI Support Bot</span><span lang="he">בוט תמיכה AI בוואטסאפ</span></h3>
+          <p class="p-tagline">
+            <span lang="en">Automated customer support over WhatsApp: Gemini answers what it's confident about, and hands the rest to a human agent in a real-time dashboard.</span>
+            <span lang="he">מערכת תמיכת לקוחות אוטומטית בוואטסאפ: Gemini עונה כשהוא בטוח בתשובה, ומעביר את השאר לנציג אנושי בדשבורד בזמן אמת.</span>
+          </p>
+          <ul class="p-points">
+            <li><span lang="en">Serverless webhook on <b>Cloudflare Workers</b> (TypeScript) receives messages from the Meta WhatsApp Cloud API and verifies request signatures.</span><span lang="he"><b>Webhook</b> ללא שרת על Cloudflare Workers ‏(TypeScript) שמקבל הודעות מ-Meta WhatsApp Cloud API ומאמת חתימות.</span></li>
+            <li><span lang="en"><b>Confidence-based routing:</b> ≥ 70% → auto-reply; below that → escalation ticket for a live agent.</span><span lang="he"><b>ניתוב לפי רמת ביטחון:</b> מעל 70% – תשובה אוטומטית; מתחת – פתיחת קריאה לנציג אנושי.</span></li>
+            <li><span lang="en"><b>Next.js dashboard</b> with login, ticket view, agent replies and reports, backed by <b>Supabase</b> (PostgreSQL) conversation history.</span><span lang="he"><b>דשבורד Next.js</b> עם התחברות, ניהול קריאות, מענה של נציגים ודוחות, על גבי היסטוריית שיחות ב-<b>Supabase</b>.</span></li>
+            <li><span lang="en">Multi-language replies driven by a knowledge base; unit-tested with Vitest.</span><span lang="he">תמיכה בריבוי שפות על בסיס מאגר ידע; בדיקות יחידה עם Vitest.</span></li>
+          </ul>
+          <div class="flow" aria-label="Architecture">
+            <span class="node">WhatsApp</span><span class="edge"></span>
+            <span class="node">Meta API</span><span class="edge"></span>
+            <span class="node hl">CF Worker</span><span class="edge"></span>
+            <span class="node hl">Gemini 2.5</span><span class="edge"></span>
+            <span class="node">Supabase</span><span class="edge"></span>
+            <span class="node">Next.js</span>
+          </div>
+          <div class="stack">
+            <span>TypeScript</span><span>Cloudflare Workers</span><span>Gemini API</span><span>Supabase</span><span>Next.js</span><span>Tailwind</span><span>Vercel</span><span>Vitest</span>
+          </div>
+          <div class="p-links">
+            <a class="btn primary sm" href="https://whatsapp-support-bot-nine.vercel.app" target="_blank" rel="noopener"><span lang="en">Live dashboard</span><span lang="he">דשבורד חי</span> ↗</a>
+            <a class="btn sm" href="https://github.com/RaniAbu95/whatsapp-support-bot" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Captain Fix -->
+      <article class="project reveal" data-tags="ai qa backend">
+        <div class="p-meta">
+          <span class="p-num mono">02</span>
+          <span class="p-date mono">Aug 2025</span>
+          <span class="badge live"><span class="dot"></span>Live</span>
+        </div>
+        <div class="p-body">
+          <h3>Captain Fix</h3>
+          <p class="p-tagline">
+            <span lang="en">An AI QA engineer: give it a URL, and it crawls the site, writes a test plan, generates Selenium tests, runs them and emails you the results.</span>
+            <span lang="he">מהנדס QA מבוסס AI: נותנים לו כתובת אתר, והוא סורק אותו, כותב תוכנית בדיקות, מייצר בדיקות Selenium, מריץ אותן ושולח את התוצאות במייל.</span>
+          </p>
+          <ul class="p-points">
+            <li><span lang="en"><b>Planner:</b> Claude analyzes the page HTML and linked forms and produces a structured test plan (suites, steps, expected results, priority, negative cases) validated with Pydantic.</span><span lang="he"><b>Planner:</b> ‏Claude מנתח את ה-HTML של האתר ושל הטפסים המקושרים ומפיק תוכנית בדיקות מובנית (סוויטות, צעדים, תוצאה צפויה, עדיפות, בדיקות שליליות) שמאומתת עם Pydantic.</span></li>
+            <li><span lang="en"><b>Executor:</b> turns each case into runnable Selenium code, self-repairs syntax errors with the LLM, and runs cross-browser (Chrome, Firefox, Safari).</span><span lang="he"><b>Executor:</b> ממיר כל מקרה בדיקה לקוד Selenium, מתקן שגיאות תחביר בעזרת ה-LLM, ומריץ על כמה דפדפנים (Chrome, Firefox, Safari).</span></li>
+            <li><span lang="en">Failures can be filed straight to <b>Jira</b> or <b>Trello</b> with screenshots attached; results emailed via Brevo.</span><span lang="he">כשלונות נפתחים אוטומטית כבאגים ב-<b>Jira</b> או ב-<b>Trello</b> עם צילומי מסך; התוצאות נשלחות במייל דרך Brevo.</span></li>
+            <li><span lang="en">Flask web app with user accounts, async job queue and PostgreSQL, containerized with Docker and deployed on Render.</span><span lang="he">אפליקציית Flask עם משתמשים, הרצה אסינכרונית ו-PostgreSQL, ארוזה ב-Docker ומפורסמת ב-Render.</span></li>
+          </ul>
+          <div class="flow" aria-label="Architecture">
+            <span class="node">URL</span><span class="edge"></span>
+            <span class="node hl">Claude planner</span><span class="edge"></span>
+            <span class="node hl">Test codegen</span><span class="edge"></span>
+            <span class="node">Selenium run</span><span class="edge"></span>
+            <span class="node">Jira · Email</span>
+          </div>
+          <div class="stack">
+            <span>Python</span><span>Flask</span><span>LangChain</span><span>Claude</span><span>Selenium</span><span>PostgreSQL</span><span>Docker</span><span>Render</span><span>Jira API</span>
+          </div>
+          <div class="p-links">
+            <a class="btn primary sm" href="https://captin-fix-deployed-1.onrender.com/" target="_blank" rel="noopener"><span lang="en">Live app</span><span lang="he">אפליקציה חיה</span> ↗</a>
+            <a class="btn sm" href="https://github.com/RaniAbu95/Captin-Fix-deployed" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <p class="note"><span lang="en">Hosted on a free tier — the first load may take ~30 seconds to wake up.</span><span lang="he">מתארח בשכבה חינמית – הטעינה הראשונה עשויה לקחת כ-30 שניות.</span></p>
+        </div>
+      </article>
+
+      <!-- Bank -->
+      <article class="project reveal" data-tags="backend">
+        <div class="p-meta">
+          <span class="p-num mono">03</span>
+          <span class="p-date mono">May 2024</span>
+          <span class="badge"><span lang="en">Source</span><span lang="he">קוד</span></span>
+        </div>
+        <div class="p-body">
+          <h3><span lang="en">Bank Management System</span><span lang="he">מערכת ניהול בנק</span></h3>
+          <p class="p-tagline">
+            <span lang="en">A REST backend for a bank: customers, bankers, accounts, transactions, loans, credit cards with installments and live currency exchange.</span>
+            <span lang="he">שרת REST לבנק: לקוחות, בנקאים, חשבונות, העברות, הלוואות, כרטיסי אשראי עם תשלומים והמרת מטבע בזמן אמת.</span>
+          </p>
+          <ul class="p-points">
+            <li><span lang="en">Layered architecture — controllers → business logic → DAO → JPA entities — across 9 domain models.</span><span lang="he">ארכיטקטורה בשכבות – Controllers ← לוגיקה עסקית ← DAO ← ישויות JPA – על פני 9 מודלים.</span></li>
+            <li><span lang="en"><b>Spring Security + JWT</b> authentication with role-based access (customer / banker).</span><span lang="he">אימות עם <b>Spring Security + JWT</b> והרשאות לפי תפקיד (לקוח / בנקאי).</span></li>
+            <li><span lang="en">Business rules enforced by 40+ dedicated exceptions (balance limits, loan types, card validation…).</span><span lang="he">כללים עסקיים שנאכפים דרך יותר מ-40 חריגות ייעודיות (מגבלות יתרה, סוגי הלוואות, אימות כרטיס…).</span></li>
+            <li><span lang="en">External exchange-rate API with caching, email notifications, and a MySQL schema.</span><span lang="he">חיבור ל-API חיצוני לשערי מטבע עם Caching, התראות במייל וסכמת MySQL.</span></li>
+          </ul>
+          <div class="flow" aria-label="Architecture">
+            <span class="node">REST client</span><span class="edge"></span>
+            <span class="node hl">JWT filter</span><span class="edge"></span>
+            <span class="node">Controllers</span><span class="edge"></span>
+            <span class="node">BL</span><span class="edge"></span>
+            <span class="node">DAO / JPA</span><span class="edge"></span>
+            <span class="node">MySQL</span>
+          </div>
+          <div class="stack">
+            <span>Java 17</span><span>Spring Boot 3</span><span>Spring Security</span><span>JWT</span><span>JPA / Hibernate</span><span>Maven</span><span>MySQL</span>
+          </div>
+          <div class="p-links">
+            <a class="btn primary sm" href="https://github.com/RaniAbu95/BANK" target="_blank" rel="noopener"><span lang="en">View source</span><span lang="he">לקוד המקור</span> ↗</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap section">
+      <div class="section-head">
+        <p class="eyebrow mono">02 / <span lang="en">about</span><span lang="he">עליי</span></p>
+        <h2><span lang="en">Experience &amp; skills</span><span lang="he">ניסיון וכישורים</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="timeline">
+          <div class="t-item reveal">
+            <span class="t-date mono">Jun 2026 — <span lang="en">Present</span><span lang="he">היום</span></span>
+            <h4>TovTech · <span lang="en">AI &amp; Software Developer</span><span lang="he">מפתח AI ותוכנה</span></h4>
+            <p><span lang="en">Full-stack apps with React, Flask and Cloudflare Workers; built the WhatsApp AI support system and a custom Claude Code skill for course-progress sync.</span><span lang="he">פיתוח Full-stack עם React, ‏Flask ו-Cloudflare Workers; בניית מערכת התמיכה בוואטסאפ ו-Skill מותאם ל-Claude Code לסנכרון התקדמות בקורסים.</span></p>
+          </div>
+          <div class="t-item reveal">
+            <span class="t-date mono">Oct 2021 — Feb 2023</span>
+            <h4>Amdocs · <span lang="en">QA Engineer</span><span lang="he">מהנדס QA</span></h4>
+            <p><span lang="en">Automated hundreds of regression tests with TestNG, worked in Linux/C++ environments, validated deployments on AWS EC2 &amp; S3 in Agile teams.</span><span lang="he">אוטומציה של מאות בדיקות רגרסיה עם TestNG, עבודה בסביבות Linux/C++, ואימות פריסות על AWS EC2 ו-S3 בצוותי Agile.</span></p>
+          </div>
+          <div class="t-item reveal">
+            <span class="t-date mono">2021</span>
+            <h4><span lang="en">Hebrew University of Jerusalem</span><span lang="he">האוניברסיטה העברית בירושלים</span></h4>
+            <p><span lang="en">B.Sc. Mathematics &amp; B.A. Business Administration.</span><span lang="he">B.Sc. במתמטיקה ו-B.A. במנהל עסקים.</span></p>
+          </div>
+        </div>
+        <div class="skills reveal">
+          <div class="s-group"><h5 lang="en">Languages</h5><h5 lang="he">שפות תכנות</h5><div class="stack"><span>Java</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>C / C++</span><span>SQL</span></div></div>
+          <div class="s-group"><h5>AI</h5><div class="stack"><span>Claude</span><span>Gemini</span><span>LangChain</span><span>Claude Code</span></div></div>
+          <div class="s-group"><h5>Backend &amp; Cloud</h5><div class="stack"><span>Spring Boot</span><span>Flask</span><span>REST</span><span>Cloudflare</span><span>Vercel</span><span>AWS</span><span>Docker</span></div></div>
+          <div class="s-group"><h5>Data</h5><div class="stack"><span>PostgreSQL</span><span>Supabase</span><span>MongoDB</span></div></div>
+          <div class="s-group"><h5>Testing</h5><div class="stack"><span>Selenium</span><span>TestNG</span><span>Vitest</span><span>STP / STD</span><span>Postman</span></div></div>
+          <div class="s-group"><h5 lang="en">Spoken</h5><h5 lang="he">שפות</h5><div class="stack"><span lang="en">Arabic (native)</span><span lang="he">ערבית (שפת אם)</span><span lang="en">Hebrew</span><span lang="he">עברית</span><span lang="en">English</span><span lang="he">אנגלית</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section contact reveal">
+      <p class="eyebrow mono">03 / <span lang="en">contact</span><span lang="he">צור קשר</span></p>
+      <h2><span lang="en">Let's build something together.</span><span lang="he">בואו נבנה משהו ביחד.</span></h2>
+      <p class="lead"><span lang="en">I'm looking for software engineering roles in AI, backend or full-stack. The fastest way to reach me is email.</span><span lang="he">אני מחפש תפקידי פיתוח תוכנה בתחומי AI, Backend או Full-stack. הדרך המהירה ביותר להשיג אותי היא במייל.</span></p>
+      <div class="contact-links">
+        <a class="c-card" href="mailto:raniab25@icloud.com">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <span><b>Email</b><small class="mono">raniab25@icloud.com</small></span>
+        </a>
+        <a class="c-card" href="https://www.linkedin.com/in/rani-abu-raia-162a55394/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          <span><b>LinkedIn</b><small class="mono">rani-abu-raia</small></span>
+        </a>
+        <a class="c-card" href="https://github.com/RaniAbu95" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          <span><b>GitHub</b><small class="mono">RaniAbu95</small></span>
+        </a>
+        <a class="c-card" href="assets/Rani_Abu_Raia_CV.docx" download>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>
+          <span><b lang="en">Resume</b><b lang="he">קורות חיים</b><small class="mono">Rani_Abu_Raia_CV</small></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer mono">
+    <span>© <span id="year">2026</span> Rani Abu Raia</span>
+    <span lang="en">Hand-built with HTML, CSS &amp; JS · hosted on GitHub Pages</span><span lang="he">נבנה ב-HTML, ‏CSS ו-JS · מתארח ב-GitHub Pages</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
