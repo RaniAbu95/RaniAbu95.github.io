@@ -147,7 +147,7 @@ html[dir="rtl"] .arrow { transform: scaleX(-1); display: inline-block; }
 .stat span { color: var(--muted); font-size: 14px; }
 
 /* ---------- sections ---------- */
-.section { padding-top: 96px; }
+.section { padding-top: 96px; scroll-margin-top: -72px; }
 .section-head { margin-bottom: 32px; }
 h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
