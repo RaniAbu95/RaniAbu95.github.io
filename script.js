@@ -12,11 +12,19 @@
   });
 
   // ---------- language ----------
+  // CV links point to the PDF matching the current interface language.
+  function updateCvLinks() {
+    var file = root.lang === 'he' ? 'assets/Rani_Abu_Raia_CV_Hebrew.pdf' : 'assets/Rani_Abu_Raia_CV.pdf';
+    document.querySelectorAll('a[data-cv]').forEach(function (a) { a.setAttribute('href', file); });
+  }
+  updateCvLinks();
+
   document.getElementById('lang-toggle').addEventListener('click', function () {
     var he = root.lang !== 'he';
     root.lang = he ? 'he' : 'en';
     root.dir = he ? 'rtl' : 'ltr';
     save('lang', root.lang);
+    updateCvLinks();
   });
 
   // ---------- project filters ----------
